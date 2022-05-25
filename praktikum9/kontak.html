@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formulir Pendaftaran</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+    <div class="container">
+      <h2 class="alert alert-danger text-center mt-3">FORMULIR PESERTA DIDIK BARU</h2>
+      <form action="simpan_kontak.php" method="post">
+
+        <!--membuat inputan Nama-->
+        <div class="form-group row mb-3">
+          <label for="nama" class="col-sm-2 col-form-label">Nama</label>
+          <div class="col-sm-10">
+          <input type="text" name="nama" class="form-control" placeholder="Nama Lengkap Anda">
+        </div>
+        </div>
+
+        <!--membuat inputan jenis kelamin-->
+        <div class="form-group row mb-3">
+          <label for="jkel" class="col-sm-2 col-form-label">Jenis Kelamin</label>
+          <div class="col-sm-10">
+          <input type="text" name="jkel" class="form-control" placeholder="Jenis Kelamin (Perempuan/Laki-laki)">
+        </div>
+        </div>
+
+        <!--membuat inputan email-->
+        <div class="form-group row mb-3">
+          <label for="email" class="col-sm-2 col-form-label">Email</label>
+          <div class="col-sm-10">
+          <input type="text" name="email" class="form-control" placeholder="Email Anda">
+        </div>
+        </div>
+
+        <!--membuat inputan alamat-->
+        <div class="form-group row mb-3">
+          <label for="alamat" class="col-sm-2 col-form-label">Alamat</label>
+          <div class="col-sm-10">
+          <input type="text" name="alamat" class="form-control" placeholder="Alamat Anda">
+        </div>
+        </div>
+
+        <!--membuat inputan kota-->
+        <div class="form-group row mb-3">
+          <label for="kota" class="col-sm-2 col-form-label">Kota</label>
+          <div class="col-sm-10">
+          <input type="text" name="kota" class="form-control" placeholder="Kota Tempat Tinggal Anda">
+        </div>
+        </div>
+
+        <!--membuat inputan pesan-->
+        <div class="form-group row mb-3">
+          <label for="pesan" class="col-sm-2 col-form-label">Pesan</label>
+          <div class="col-sm-10">
+          <textarea name="pesan" class="form-control"></textarea>
+        </div>
+        </div>
+
+        <!--membuat tombol untuk menyimpan data-->
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+          <input type="submit" value="simpan" name="simpan" />
+        </div>
+
+      </form>
+    </div>
+  </body>
+</html>
